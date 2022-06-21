@@ -1,0 +1,80 @@
+.instant-opinion {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    z-index: 9999;
+
+    height: auto;
+
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+
+    padding: 5px 10px 5px 12px;
+
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.instant-opinion.hide_kinda {
+    transition-duration: 1s;
+    margin-right: -130px;
+}
+
+.instant-opinion .instant-opinion-dropdown.show_happy {
+    display: block;
+}
+
+.instant-opinion.hide_kinda:hover {
+    margin-right: 0;
+}
+
+.instant-opinion * {
+    box-sizing: border-box;
+}
+
+.instant-opinion .instant-opinion-opinion .instant-opinion-thumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.instant-opinion .instant-opinion-opinion svg {
+    height: 40px;
+    width: 40px;
+}
+
+.instant-opinion .instant-opinion-opinion span {
+    display: inline-block;
+}
+
+.instant-opinion .instant-opinion-explainer {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 14px;
+    user-select: none;
+    margin: 0;
+}
+
+.instant-opinion .instant-opinion-dropdown p {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+.instant-opinion .instant-opinion-dropdown p a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.instant-opinion .instant-opinion-dropdown p a:visited {
+    color: dodgerblue;
+}
+
+@media screen and (max-width: 600px) {
+    .instant-opinion {
+        display: none;
+    }
+}
