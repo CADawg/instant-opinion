@@ -24,4 +24,4 @@ HTML Code For the embed. Dropdown can contain \<p\> tags (and \<a\> tags inside 
 </div>
 ```
 
-![](https://media.discordapp.net/attachments/841444107879448586/988858243109486662/unknown.png)
+![](https://cdn.discordapp.com/attachments/841444107879448586/988960822011260948/unknown.png)
