@@ -20,6 +20,36 @@
     margin-right: -130px;
 }
 
+.instant-opinion .instant-opinion-percent {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 16px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.instant-opinion .instant-opinion-progress {
+    background-color: red;
+    user-select: none;
+    height: 18px;
+    position:relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.instant-opinion .instant-opinion-progress .instant-opinion-progress-progress {
+    height: 100%;
+    background-color: green;
+}
+
 .instant-opinion .instant-opinion-dropdown.show_happy {
     display: block;
 }
