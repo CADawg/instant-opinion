@@ -69,7 +69,7 @@
             "<div class='instant-opinion-progress'><div class='instant-opinion-progress-progress' style='width: " + percent + "%;'></div>" + (percent !== false ? "<p class='instant-opinion-percent'>" + percent + "%</p>" : "<p class='instant-opinion-percent'>50%</p>") + "</div>";
 
         const progress = opinionArea.querySelector(".instant-opinion-progress-progress");
-        progress.style.width = percent + "%";
+        progress.style.width = (percent === false ? "50" : percent) + "%";
 
         const thumbsDiv = document.createElement("div");
         thumbsDiv.classList.add("instant-opinion-thumbs");
@@ -81,13 +81,6 @@
         setTimeout(() => {
             opinion.classList.add("hide_kinda");
         }, 2500);
-
-        // add style element
-        const linkElement = document.createElement("link");
-        linkElement.href = "opinion.css";
-        linkElement.rel = "stylesheet";
-        linkElement.type = "text/css";
-        opinionArea.appendChild(linkElement);
 
         let isClickedLike = false;
         let isClickedDislike = false;
