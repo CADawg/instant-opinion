@@ -1,7 +1,7 @@
 (async function () {
     const q$ = e => document.querySelectorAll(e);
 
-    const instantOpinionURL = "http://localhost:3000/votes/" + window.location.hostname;
+    const instantOpinionURL = "https://instant-opinion.dbuidl.com/votes/" + window.location.hostname;
 
     const opinions = q$(".instant-opinion");
 
