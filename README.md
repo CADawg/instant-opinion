@@ -1,12 +1,12 @@
 # Instant Opinion
 ## A small widget that lets visitors like and dislike your website (once per day, max)
 
-Download it to your server and embed it like so (if in the same folder as your HTML)
+Insert the script tag near the bottom of your document
 ```js
-<script src="opinion.js"></script>
+<script src="https://instant-opinion.dbuidl.com/instant-opinion.min.js"></script>
 ```
 
-HTML Code For the embed. Dropdown can contain \<p\> tags (and \<a\> tags inside of \<p\> tags) to other services that should be shown to the user if they like the website.
+Then add the HTML Code For the embed. Dropdown can contain \<p\> tags (and \<a\> tags inside of \<p\> tags) to other services that should be shown to the user if they like the website.
 
 ```html
 <div class="instant-opinion">
@@ -24,4 +24,4 @@ HTML Code For the embed. Dropdown can contain \<p\> tags (and \<a\> tags inside 
 </div>
 ```
 
-![](https://media.discordapp.net/attachments/841444107879448586/988858243109486662/unknown.png)
+![](https://cdn.discordapp.com/attachments/841444107879448586/988960822011260948/unknown.png)
