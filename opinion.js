@@ -103,7 +103,8 @@
                 thumbsUpIcon.innerHTML = thumbsUpLight;
                 checkUpdateNecessary();
 
-                return await vote("0", opinion, progress);
+                await vote("0", opinion, progress);
+                return;
             }
 
             isClickedLike = true;
@@ -113,7 +114,8 @@
             thumbsDownIcon.innerHTML = thumbsDownLight;
             checkUpdateNecessary();
 
-            return await vote("1", opinion, progress);
+            await vote("1", opinion, progress);
+            return;
         });
 
         thumbsDownIcon.addEventListener("click", async e => {
@@ -125,7 +127,8 @@
                 thumbsDownIcon.innerHTML = thumbsDownLight;
                 checkUpdateNecessary();
 
-                return await vote("0", opinion, progress);
+                await vote("0", opinion, progress);
+                return;
             }
 
             isClickedDislike = true;
@@ -135,7 +138,8 @@
             thumbsUpIcon.innerHTML = thumbsUpLight;
             checkUpdateNecessary();
 
-            return await vote("-1", opinion, progress);
+            await vote("-1", opinion, progress);
+            return;
         });
     }
 })();
